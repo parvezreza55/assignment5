@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- daisy ui cdn  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+      .bg-body-primary {
+        background-color: rgba(244, 247, 255, 1);
+      }
+      .color1 {
+        color: #00303c;
+      }
+      .color2 {
+        color: #3752fd;
+      }
+      .bg-color2 {
+        background-color: #3752fd;
+      }
+    </style>
+  </head>
+  <body class="bg-body-primary">
+    <header class="max-w-screen-xl mx-auto pt-5">
+      <nav>
+        <div
+          class="navbar rounded-xl shadow-sm p-4 flex justify-between bg-white"
+        >
+          <div class="">
+            <div class="flex items-center gap-2">
+              <img src="assets/logo.png" alt="" />
+              <p class="text-3xl">
+                Dev<span class="font-bold color1">Board</span>
+              </p>
+            </div>
+          </div>
+          <div>
+            <button id="back-desk" class="btn bg-color2 text-white font-medium">
+              Back to Desk
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- main section  -->
+    <main class="max-w-screen-xl mx-auto mt-3">
+      <section>
+        <h1 class="text-xl font-bold text-center mb-3">Blogs</h1>
+        <div class="space-y-3">
+          <div class="bg-white p-4 rounded-xl">
+            <h1>
+              Question-1: What are the different ways to select an element in
+              the DOM?
+            </h1>
+            <hr class="border-dashed border-gray-400 my-2" />
+            <p>
+              1.getElementById <br />2.getElementsByClassName
+              <br />3.getElementsByTagName <br />
+              4.querySelector <br />
+              5.querySelectorAll
+            </p>
+          </div>
+
+          <!-- question 2  -->
+
+          <div class="bg-white p-4 rounded-xl">
+            <h1>
+              Question-2: What is the difference between innerHTML, innerText,
+              and textContent ?
+            </h1>
+            <hr class="border-dashed border-gray-400 my-2" />
+            <p>
+              innerHTML = we can get and set the content of a html element using
+              backtick<br />
+              innerText = we can get and set inside the html element <br />
+              textContent = set the content inside the html element
+            </p>
+          </div>
+
+          <!-- question 3  -->
+
+          <div class="bg-white p-4 rounded-xl">
+            <h1>Question-3: What is event delegation in the DOM?</h1>
+            <hr class="border-dashed border-gray-400 my-2" />
+            <p>
+              when triggered in a element it working according to event bubbling
+              form the higher parent order to lower in a Dom tree (DOCTYPE to
+              the triggered element)
+            </p>
+          </div>
+
+          <!-- question 4  -->
+
+          <div class="bg-white p-4 rounded-xl">
+            <h1>Question-4: What is event bubbling in the DOM?</h1>
+            <hr class="border-dashed border-gray-400 my-2" />
+            <p>
+              In a dom tree it is working according to propagation method like
+              when triggered an element then it working from this element to the
+              parent element.
+            </p>
+          </div>
+
+          <!-- question 5  -->
+
+          <div class="bg-white p-4 rounded-xl">
+            <h1>
+              Question-5: How do you create, add, and remove elements using
+              JavaScript?
+            </h1>
+            <hr class="border-dashed border-gray-400 my-2" />
+            <p>
+              create = document.createElement() <br />
+              add = element.appendChild() <br />
+              remove = element.remove()
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script/blog.js"></script>
+  </body>
+</html>
