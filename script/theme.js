@@ -9,3 +9,8 @@ function randomNumber() {
   const bgColor = `rgb(${randomNum1}, ${randomNum2},${randomNum3})`;
   return bgColor;
 }
+
+// calender time
+const time1 = new Date();
+const day = time1.toDateString("en-US");
+document.getElementById("calender-time").innerText = day;
